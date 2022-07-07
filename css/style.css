@@ -1,0 +1,1545 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    overflow-x:hidden ;
+}
+
+.hamburger{
+    display: none;
+}
+.head__hospitalIcon{
+    display: none;
+}
+.head__white-search-icon{
+    display: none;
+}
+.navbar-white{
+   font-size: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    list-style: none;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    height: 58px;
+
+    
+}
+
+.navbar-white__link{
+    text-decoration: none;
+    color: rgb(15, 141, 180);
+    margin-left:10px;
+}
+
+.navbar-white__link--btn{
+    
+   background-color: rgb(15, 141, 180);
+    color: rgb(255, 255, 255);
+    text-align: right;
+    padding: 0.5rem 1.625rem;
+    border: none;  
+    margin-left: 24px;
+}
+/*--------------Search Box--------------*/
+.navbar-white--searchBox{
+    width:296px;
+    height: 38px;
+    border:2px rgb(15, 141, 180) solid;
+    border-radius: 5px;
+    display:flex;
+    justify-content: space-around;
+}    
+.navbar-white--searchText{
+    border: none;
+    padding-top:4px ;
+    padding-bottom: 4px;
+    line-height: 30px;
+    outline: none;
+    background: none;
+    padding-left: 0.25rem ;
+    font-size: 17.603px;
+    font-family: "Avenir";
+    color: rgb(15, 141, 180);
+}
+.navbar-white--searchText::placeholder{
+    color: rgb(15, 141, 180);
+    
+}
+.navbar-white--searchIcon{
+    width: 15px;
+    height: 15px;
+    margin-top: 10px;
+}
+/*--------////////////////////------*/
+.navbar-white--language{
+    display: flex;
+    gap:10px;
+    align-items: center;
+}
+
+/*----------------------navbar-blue-------------------------*/
+
+.navbar-blue{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 7.25rem;
+    background-color: rgb(15, 141, 180);
+}
+#toggle1{
+    display: none;
+}
+.navbar-blue__hospitalBox{
+    width: 294px;
+    height: 7.25rem;
+    background-color: #00556f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.navbar-blue__hospitalIcon{
+    height: 70px;
+    width: 163px;
+
+}
+.mobile-navparts{
+    display: none;
+}
+
+.navbar-blue__btn{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:226.5px;
+    height: 116px;
+    border-right: 1px white solid;
+    border-right: 1px white solid;
+    text-align: center;
+    
+}
+.navbar-blue__btn:hover{
+    background-color: rgb(135, 198, 218);
+}
+
+.navbar-blue__link{
+    text-decoration: none;
+    font-size: 17.215px;
+    font-family: "Avenir";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.2;
+
+}
+/*-------------Blue nav Dropdown---------*/
+.hospitalIcon-mobile{
+    display: none;
+}
+
+.dropdown-content__item{
+    background-color: #67b0c7;
+    z-index: 1;
+    width: 296px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    text-align: center;
+    
+}
+.dropdown-content__item{
+    padding: 23px 0px;
+    color:#00556f ;
+}
+.speciality-care{
+   border-top:1px solid whitesmoke;
+   border-bottom:1px solid whitesmoke;
+    width: 100%;
+}
+
+
+.navbar-blue__dropdown
+{
+    z-index: 1;
+    display: block;
+}
+
+.navbar-blue__dropdown--displayNone{
+    margin-right: -70px;
+    display: none;
+    z-index: 1;
+    
+}
+.dropdown-content__item:nth-child(2){
+    border-top:2px solid whitesmoke ;
+    border-bottom:2px solid whitesmoke 
+}
+.navbar-blue__dropdown:hover .navbar-blue__dropdown--displayNone{
+    display: block;
+    transition: 1s;
+}
+.navbar-blue__dropdown:active{
+    background-color: #67b0c7;
+}
+.dropdown-content__item:hover{
+    color: whitesmoke;
+    width: 100%;
+    height: fit-content;
+    background-color: #7ebcd4;
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+
+/*page1*/
+.section1{
+    height:750px;
+}
+.page1{
+    max-width:100% ;
+    height: 664px;
+    overflow: hidden;
+
+}
+.slide__img--mobile{
+    display: none;
+}
+.slide__img{
+    width: 100vw;
+    height:664px;
+
+}
+
+.slide{
+    width:100% ;
+    height: 664px;
+    display: flex;
+
+}
+
+.slide input{
+
+    display: none;
+
+}
+.slide__item{
+
+    width: 300%;
+    transition: 2s;
+
+}
+.slide-manual{
+    position: absolute;
+    width: 100vw;
+    margin-top: -105px;
+    gap: 5px;
+    display: flex;
+    justify-content: center;
+
+}
+.slide-manual--btn{
+    border: 2px solid whitesmoke;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+   
+
+}
+.slide-manual--btn:hover{
+
+    background-color: whitesmoke;
+
+}
+
+#radio1:checked ~ .slide__item--first{
+    margin-left: 0px;
+}
+#radio2:checked ~ .slide__item--first{
+    margin-left: -100vw;
+   
+}
+#radio3:checked ~ .slide__item--first{
+    margin-left: -200vw;
+}
+.slide-text{
+    width: 100%;
+    position: absolute;
+    margin-top: -440px;
+    margin-left: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.slide-text__hr{
+    background-color:  rgb(209, 213, 101);
+    margin-bottom: 28px;
+    width: 310px;
+    height: 3px;
+    
+}
+.slide-text__hr{
+    background-color:  rgb(209, 213, 101);
+    margin-top: 28px;
+    width: 310px;
+    height: 3px;
+    
+}
+.slide-text__stronger{
+  
+        font-size: 73px;
+        font-family: "Avenir";
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        line-height: 0.898;
+        text-align: center;
+}
+.slide-text__together{
+    font-size: 79px;
+    font-family: "MBaskerville";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.016;
+   
+}
+.slide-text__paragraph{
+
+    font-size: 21.563px;
+    font-family: "Avenir";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+   
+}
+/*----------------------------------------------------------------*/
+/*-----------THREE DROPUPS-----------*/
+
+.dropups__second-imgs{
+    display: none;
+}
+.dropups{
+   
+    position: absolute;
+    height: 580px;
+   width: 100%;
+   display: flex;
+   align-items: flex-end;
+   justify-content: center;
+   gap:2px;
+   overflow: hidden;
+   margin-top:-494px;
+   visibility: hidden;
+   
+ 
+
+}
+
+.dropup__btn{
+    
+    width: 399px;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    border: none;
+    font-size: 26px;
+    font-family: "Avenir";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    margin-bottom: 0%;
+    visibility: visible;
+   
+}
+
+
+.dropup__btn--grey{
+    background-color: rgb(101, 103, 91);
+
+}
+.dropup__btn--orange{
+  background-color: rgb(225, 88, 42);
+
+}
+.dropup__btn--green{
+  background-color: rgb(0, 131, 123);
+
+}
+
+
+.dropup-grey{
+    visibility: visible;
+    background-color:rgb(101, 103, 91);
+ 
+}
+
+
+
+
+.dropup__content--grey{
+    height: 484px;
+    width:400px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    
+    
+}
+.dropup-grey__link{
+    text-decoration:none;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    border-radius: 8px;
+    width: 18.5rem;
+    height: 2.25rem;
+    margin-top: 11px;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom:-8px;
+}
+
+
+
+/*================Drop UP 2 ==============*/
+.dropup-orange{
+
+    width: 400px;
+    background-color:rgb(225, 88, 42);
+    visibility: visible;
+
+}
+.dropup__content--orange{
+    height: 294px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom:20px ;
+    
+}
+.dropup-orange__item {
+    background-color:rgb(225, 88, 42);
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    outline: none;
+    border-radius: 8px;
+    width: 18.5rem;
+    height: 2.25rem;
+    margin: 0 auto;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.dropup-orange__item::placeholder{
+    color: whitesmoke;
+}
+
+.dropup-orange__item--text-arrowdown{
+    border: none;
+    outline: none;
+    background: none;
+    padding-left: 0.25rem ;
+    font-size: 17.603px;
+    font-family: "Avenir";
+    color: whitesmoke;
+}
+.dropup-orange__item--text-arrowdown::placeholder{
+    color: whitesmoke;
+}
+.dropup-orange__arrowdown__icon{
+    width: 15px;
+    height: 10px;
+   margin-bottom: 3px;
+}
+
+.dropup-orange__gender{
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+    color: whitesmoke;
+}
+
+.dropup-orange__checkbox{
+    background-color: rgb(225, 88, 42);
+    color: whitesmoke;
+}
+
+
+.dropup-orange__submit{
+ 
+  width: 14.125rem;
+  height: 46px;
+  background-color: whitesmoke;
+  color: rgb(225, 88, 42);
+  font-size: 14px;
+  font-family: "Avenir";
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+ cursor: pointer;
+}
+
+
+
+/*==================Drop Up green =================*/
+.dropup-green{
+    
+    width: 399px;
+    background-color:rgb(0, 131, 123);
+    visibility: visible;
+   
+}
+.dropup__content--green{
+    height:349px;
+    width: 399px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+    margin-bottom: 26px;
+    padding-bottom: 20px;
+   
+}
+.dropup-green__link{
+    text-decoration:none;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    border-radius: 8px;
+    width: 18.5rem;
+    height: 2.25rem;
+    margin-top: 11px;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom:-8px;
+}
+/*dropups hover*/
+
+.dropup__content{
+    display: none;
+    
+}
+.dropup:hover .dropup__content{
+    display: flex;
+    
+}
+/*------------*/
+
+/*------//////////////////////////////////////Section 2/////////////////////////// ------------------*/
+.mobile-bmc{
+    display: none;
+}
+.mobile-news{
+    display: none;
+}
+.bmc-news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:92px;
+    width: 100%;
+    margin-bottom: 92px;
+}
+.bmc__title{
+    
+        font-size: 22px;
+        font-family: "Avenir";
+        color: rgb(32, 21, 68);
+        font-weight:bold ;
+        margin-bottom: 48px;
+      
+}
+.bmc-head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 34px;
+}
+.bmc-head__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bmc-head__item__title{
+    margin-top:40px;
+    font-size: 28px;
+    font-family: "MBaskerville";
+    color: rgb(32, 21, 68);
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+        
+      
+      
+}
+.bmc-head__item__text{
+    
+        font-size: 21.463px;
+        font-family: "Avenir";
+        color: rgba(32, 21, 68, 0.902);
+        line-height: 1.2;
+        text-align: center;     
+      
+}
+.bmc-head--hr{
+    width: 212px;
+    border:2px solid rgb(209, 213, 101);
+    margin: 26px 0px;
+      
+      
+}
+
+.bmc-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(209, 213, 101);
+    width: 948px;
+    height: 417px;
+    z-index: 101;
+    margin-top: 84px;
+}
+
+.bmc-content__text{
+    margin: 40px;
+}
+.bmc-content__text h1{
+    
+    font-size: 18.694px;
+    font-family: "Avenir";
+    color: rgb(5, 5, 5);
+    line-height: 1.2;
+    text-align: left;
+    margin-bottom:34px ;
+    margin-top: 40px;
+      
+}
+.bmc-content__text p{
+    
+    font-size: 13.668px;
+    font-family: "Avenir";
+    color: rgb(5, 5, 5);
+    line-height: 1.2;
+    text-align: left;
+    margin-bottom: 16px;
+
+      
+      
+}
+.news__title{
+    margin-top: 84px;
+    font-size: 24px;
+    font-family: "Avenir";
+    color: rgb(32, 21, 68);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    font-weight: bold;
+      
+}
+.news{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 54px;
+    gap:16px;
+    margin-bottom: 92px;
+      
+}
+.news__items{
+    width: 227px;
+    height: 96px;
+    text-align: center;     
+      
+      
+}
+.news__items__text{
+    font-family: "Avenir";
+        color: rgba(32, 21, 68, 0.902);
+        line-height: 1.2;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 26px;
+        
+}
+/*-------/////////////////////////////Section 3////////////////////////////----------------*/
+.mobile-footers{
+    display: none;
+}
+.footers{
+    width: 100vw;
+    font-family: "Avenir";
+    line-height: 1.2;
+    color: rgba(32, 21, 68, 0.902);
+    background-color: rgba(150, 151, 151, 0.251);
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+}
+
+.big-footer{
+    width: 100vw;
+    text-decoration: none;
+    padding-top: 58px;
+    gap:50px
+}
+
+.big-footer__content >p{
+margin-bottom:34px;
+margin-top: 34px;
+}
+.big-footer__social-media{
+    margin-top: 34px;
+    display: flex;
+    gap: 10px;
+    
+
+}
+.social-media__items{
+    display: flex;
+    align-items: center;
+    color: blue;
+    border: 1px solid rgb(32,21,68);
+    border-radius: 50%;
+    padding: 7px;
+    
+}
+.social-media__items:first-child{
+    padding-left: 10px;
+    padding-right: 10px;
+ }
+.big-footer__item{
+    margin-bottom: 34px;
+}
+.big-footer__item--title{
+    font-size: 19.31px;
+     font-family: "Avenir";
+     text-transform: uppercase;
+     line-height: 1.374;
+     text-align: left;
+     color: rgba(32, 21, 68, 0.902);
+}
+.big-footer__content--last .big-footer__item--title{
+   
+     font-size: 19.31px;
+     font-family: "Avenir";
+     color: rgba(32, 21, 68, 0.902);
+     text-transform: uppercase;
+     line-height: 1.374;
+     text-align: left;
+     margin-bottom: 34px;
+}
+.small-footer{
+    padding-bottom: 46px;
+    
+    
+}
+.small-footer__link{
+    text-decoration: none;
+    color: rgba(32, 21, 68, 0.902); 
+    padding: 0px 10px;
+    border-right: 2px solid rgba(32, 21, 68, 0.902);
+}
+.small-footer__link:last-child{
+    border:none
+}
+.white-footer{
+    height: 150px;
+    background-color: whitesmoke;
+}
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////// Mdedia max-width 900px///////////////////////////////*/
+
+@media only screen and (max-width: 1200px) {
+   
+    .head{
+        height: 7.25rem;
+        display: flex;
+        overflow: hidden;
+        background-color: rgb(0, 85, 111);}
+    .navbars{
+        display: none;
+        position: absolute;
+        width: 100%;
+        transition: 1s;
+        transform: translateY(7.25rem);
+        z-index: 1;
+        }
+    
+    /*----White NAVBAR----*/
+    .navbar-white__link--research{
+        display: none;
+    }
+    .navbar-white{
+        order: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 74px;
+    }
+    .navbar-white--searchBox{
+        display: none;
+    }
+    .navbar-white--language{
+        display: none;
+    }
+   
+
+    /*---END White NAVBAR----*/
+
+    /*--Blue NAVBAR--*/
+    .navbar-blue__hospitalBox{
+        display: none;
+    }
+    .navbar-blue__btn--visitingus{
+        display: none;
+    }
+    .mobile-navdrop{
+        display: none;
+    }
+    
+    .condition-we-treat{
+         display: none;
+    }
+    .slide__img--mobile{
+        display: none;
+    }
+    .head__hospitalIcon{
+        height: 56px;
+        width:132px ;
+        margin-top: 28px;
+        margin-left: 24px;
+        display: block;
+       
+        
+    }
+    .head__white-search-icon{
+    color: white;
+    width: 30px;
+    height:30px;
+    margin-left: 1%;
+    margin-right: 1%;
+    transform: translate(60px,50px);
+    display: block;
+    
+
+    }
+   
+    .navbar-blue{ 
+        background-color:rgb(15, 141, 180) ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        order:0;
+        height: fit-content;
+    }
+  
+    .navbar-blue__btn{
+        border-right:none;
+        border-bottom:2px solid whitesmoke;
+        width: 100%;
+    }
+    .navbar-blue__dropdown{
+        width: 100%;
+    }
+    .navbar-blue__dropdown:hover .navbar-blue__dropdown--displayNone{
+        width: 100%;
+        display: none;
+    }
+   
+   
+ 
+   .white-search-icon{
+       margin-left:12px;
+    
+   }
+   
+    .hamburger {
+        height: 22px;
+        margin: 10px;
+        margin-left: 65%;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        justify-items: center;
+        transform: translate(66px, 39px);
+        z-index: 120;
+       }
+       
+       .bars{
+        background-color: whitesmoke;
+        position: relative;
+        width: 25px;
+        height: 5px;
+        margin-top: 5px;
+        transition: all 0.2s ease-in-out;
+        border-radius: 3px;
+       }
+       
+       #toggle1 {
+        display: none;
+       }
+       
+       #toggle1:checked + .hamburger .top {
+       
+        transform: rotate(-45deg);
+        margin-top: 15px;
+       }
+       
+       #toggle1:checked + .hamburger .meat {
+        
+        transform: rotate(45deg);
+        margin-top: -5px;
+       }
+       
+       #toggle1:checked + .hamburger .bottom {
+                transform: scale(0);
+       }
+       
+       #toggle1:checked ~ .navbars {
+        display: flex;
+        flex-direction: column;
+        transition: 2s;
+       }
+/*-------END Blue NAVBAR------*/
+
+       /*____________________*/
+    
+    .page1{
+        max-width:100%;
+        height: 564px;
+        overflow: hidden;
+    }
+        
+    .slide__img{
+        width: 100vw;
+        height:564px;
+    }
+    
+     
+    .slide{
+        width:100% ;
+        height: 564px;
+        display: flex;
+    }
+    
+    .slide input{
+        display: none;
+    }
+    .slide__item{
+        width: 300%;
+        transition: 1s;
+    
+    }
+    .slide-manual{
+        position: absolute;
+        width: 100vw;
+        margin-top: -105px;
+        gap: 5px;
+        display: flex;
+        justify-content: center;
+    
+    }
+    .slide-text{
+        margin-top: -420px;
+      
+    }
+       .slide-text__hr{
+        background-color:  rgb(209, 213, 101);
+        margin-bottom: 28px;
+        width: 294px;
+        height: 3px;
+        
+    }
+ 
+    .slide-text__stronger{
+      
+            font-size: 60px;
+            font-family: "Avenir";
+            color: rgb(255, 255, 255);
+            text-transform: uppercase;
+            line-height: 0.898;
+            text-align: center;
+    }
+    .slide-text__together{
+        font-size: 60px;
+        font-family: "MBaskerville";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        font-style: italic;
+        line-height: 1.016;
+       
+    }
+    .slide-text__paragraph{
+    
+        font-size: 16.563px;
+        font-family: "Avenir";
+        color: rgb(255, 255, 255);
+        line-height: 1.2;
+       
+    }
+
+    
+
+.dropups__second-imgs{
+    display: flex;
+}
+.dropups__first-imgs{
+    display: none;
+}
+    .dropups{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:flex-end;
+        margin-top: -292px;
+        width: 100%;
+        gap:0px;
+    }
+    .dropup{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+        margin-top: 0%;
+        border-bottom: none;
+    }
+    .dropup__btn{
+        width: 100%;
+    }
+    .dropup:hover .dropup__content{
+        display: none;
+        
+    }
+
+    /*-------/////////////////SECTION 2/////////------*/
+    .bmc-news{
+        display: none;
+    }
+    .mobile-bmc{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 202px;       
+
+    }
+    .mobile-bmc__card{
+        background-image: url(/image/mobile-bmc-img.png);
+        background-repeat: no-repeat;
+        height: 256px; 
+        width: 279px;
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content: center;
+        color: white;
+        
+
+    }
+    .mobile-bmc__card p{
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+    .mobile-bmc__card h2{
+        margin-left: 20px;
+    } 
+    .mobile-bmc__content{
+        width:279px;
+        border-bottom: 1px solid rgb(175, 170, 170);
+        border-left: 1px solid rgb(175, 170, 170);
+        border-right: 1px solid rgb(175, 170, 170);
+        padding-top: 20px;
+        padding:20px 10px;
+        font-family: "Avenir";
+        color: rgb(0, 131, 123);
+        line-height: 1.2;
+        text-align: left;
+          
+    }
+    .mobile-bmc__item{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+    .mobile-bmc__item--img{
+        width: fit-content;
+        height: fit-content;
+    }
+
+
+
+.mobile-news{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    
+      
+      
+    
+}
+.mobile-news__card{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding:20px 20px;
+    width: 279px;
+    background-color: rgb(228, 232, 232);
+}
+.mobile-news__title{
+   
+    font-size: 14px;
+    font-family: "Avenir";
+    color: rgb(0, 131, 123);
+    text-transform: uppercase;
+    line-height: 2.273;
+    
+      
+}
+.mobile-news__img{
+    width:236px;
+    height:146px;
+}
+.mobile-news__text{
+    width: 170px;
+    font-size: 13px;
+    color: rgb(0, 131, 123);
+    padding-top: 20px;
+}
+.mobile-news__content{
+    font-size: 13px;
+    color: rgb(0, 131, 123);
+    width:279px;
+    padding: 20px;
+    border-top: 1px whitesmoke solid;
+    border-bottom: 1px whitesmoke solid;
+    background-color: rgb(228, 232, 232);
+}
+
+.mobile-news__footer{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    background-color: rgb(228, 232, 232);
+    width: 279px;
+    color: rgb(0, 131, 123);
+    
+}
+    /*-------/////////////////SECTION 3/////////------*/
+    .footers{
+    display: none;
+    }
+    .mobile-footers{
+        background-color: #00556f; ;
+    }
+    .mobile-footers{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .mobile-footers__link{
+        text-decoration: none;
+        color: whitesmoke;
+    }
+    .mobile-footer__social-media{
+        margin-top: 34px;
+        display: flex;
+        gap: 10px;
+        padding-top: 20px;
+        padding-bottom: 26px;
+        
+    
+    }
+    .mobile-footer__social-media__item{
+        display: flex;
+        align-items: center;
+        color: whitesmoke;
+        border: 1px solid whitesmoke;
+        border-radius: 50%;
+        padding: 7px;
+        
+    }
+   .mobile-footers a:last-child{
+    padding-bottom: 36px;
+   }
+   .mobile__white-footer{
+        height: 50px;
+    }
+     
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////// Mdedia max-width 900px///////////////////////////////*/
+
+@media only screen and (max-width: 900px){
+    /*--Blue NAVBAR--*/
+
+    .white-search-icon{
+    color: white;
+    width: 30px;
+    height:30px;
+    margin-left: 1%;
+    margin-right: 1%;
+    transform: translate(60px,50px);
+    display: block;
+    
+
+    }
+    .navbars{
+
+        display: none;
+        position: absolute;
+        width: 100%;
+        transition: 1s;
+        transform: translateY(7.25rem);
+        z-index: 1;
+    }
+    .hamburger {
+        height: 22px;
+        margin: 10px;
+        margin-left: 60%;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        justify-items: center;
+        transform: translate(66px, 39px);
+        z-index: 120;
+       }
+       
+
+    /*---------------SLIDES--------------*/
+    .page1{
+        max-width:100% ;
+        height: 400px;
+        overflow: hidden;
+    }
+   
+    .slide__img{
+        width: 100vw;
+        height:400px;
+    }
+    
+    
+    .slide{
+        width:100% ;
+        height: 400px;
+        display: flex;
+    }
+    
+    .slide input{
+        display: none;
+    }
+    .slide__item{
+        width: 300%;
+        transition: 2s;
+    }
+    .slide-text{
+        width: 100%;
+        position: absolute;
+        margin-top: -304px;
+        margin-left: 0%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .slide-manual{
+        position: absolute;
+        width: 100vw;
+        margin-top: -50px;
+        gap: 5px;
+        display: flex;
+        justify-content: center;
+    
+    }
+   
+    .slide-text__hr{
+        background-color:  rgb(209, 213, 101);
+        margin-bottom: 28px;
+        width: 294px;
+        height: 3px;
+        
+    }
+   
+    .slide-text__stronger{
+      
+            font-size: 45px;
+            font-family: "Avenir";
+            color: rgb(255, 255, 255);
+            text-transform: uppercase;
+            line-height: 0.898;
+            text-align: center;
+    }
+    .slide-text__together{
+        font-size: 45px;
+        font-family: "MBaskerville";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        font-style: italic;
+        line-height: 1.016;
+       
+    }
+    .slide-text__paragraph{
+    
+        font-size: 17.563px;
+        font-family: "Avenir";
+        color: rgb(255, 255, 255);
+        line-height: 1.2;
+       
+    }
+
+/*----Section 2-------*/
+.mobile-bmc{
+    margin-top: 0px;
+}
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////____MEDIA MAX-WIDTH 777px///////////////////////////*/
+
+@media only screen and (max-width: 777px){
+
+    .head{
+        height: 6.25rem;
+        background-color: rgb(0, 85, 111);
+        display: flex;
+        overflow: hidden;
+    }
+
+    /*----White NAVBAR----*/
+    .navbars{
+
+        display: none;
+        position: absolute;
+        width: 100%;
+        transition: 1s;
+        transform: translateY(6.25rem);
+        z-index: 1;
+    }
+   
+    .navbar-white{
+        order: 1;
+        height: 74px;
+        display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+    }
+   
+
+    /*--Blue NAVBAR--*/
+   
+    .navbar-blue__hospitalBox{
+        display: none;
+        
+    }
+    .head__white-search-icon{
+    color: white;
+    width: 30px;
+    height:30px;
+    margin-left: 1%;
+    margin-right: 1%;
+    transform: translate(60px,50px);
+    display: block;
+    }
+    .hamburger {
+        margin-left: 55%;
+    }
+
+    .navbar-blue__btn{
+        height: 4.75rem;
+    }
+    #toggle1:checked ~ .navbars {
+        transform: translatey(98px);
+    }
+       
+    
+    /*---------------SLIDES--------------*/
+    .page1{
+        max-width:100% ;
+        height: 300px;
+        overflow: hidden;
+    }
+   
+    .slide__img{
+        width: 100vw;
+        height:300px;
+    }
+    .slide{
+        width:100% ;
+        height: 300px;
+        display: flex;
+    }
+    
+    .slide input{
+        display: none;
+    }
+    .slide__item{
+        width: 300%;
+        transition: 2s;
+    }
+
+    
+    .slide-manual{
+        position: absolute;
+        width: 100vw;
+        margin-top: -50px;
+        gap: 5px;
+        display: flex;
+        justify-content: center;
+    
+    }
+    .slide-text{
+        width: 100%;
+        position: absolute;
+        margin-top: -254px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+   
+    .slide-text__hr{
+        background-color:  rgb(209, 213, 101);
+        margin-bottom: 20px;
+        width: 180px;
+        height: 3px;
+        
+    }
+   
+    .slide-text__stronger{
+      
+            font-size: 35px;
+            font-family: "Avenir";
+            color: rgb(255, 255, 255);
+            text-transform: uppercase;
+            line-height: 0.698;
+            text-align: center;
+    }
+    .slide-text__together{
+        font-size: 35px;
+        font-family: "MBaskerville";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        font-style: italic;
+        line-height: 1.016;
+       
+    }
+    .slide-text__paragraph{
+    
+        font-size: 14.563px;
+        font-family: "Avenir";
+        color: rgb(255, 255, 255);
+        line-height: 1.2;
+       
+    }
+    
+ /*---------------DROP UP-------------*/
+    .dropups__second-imgs{
+        display: flex;
+    }
+    .dropups__first-imgs{
+        display: none;
+    }
+        .dropupBox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:flex-end;
+        margin-top: -292px;
+        width: 100%;
+        gap:0px;
+    }
+    .dropup{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+        margin-top: 0%;
+        border-bottom: none;
+    }
+  
+    .dropups{
+        margin-top:0px;
+        height: fit-content;
+    }
+    .dropup__btn{
+        height: 4.25rem;
+    }
+  
+
+/*-------/////////////////SECTION 2/////////------*/
+   
+    .mobile-bmc{
+        margin-top: -202px;       
+
+    }
+    
+}
+
+@media only screen and (max-width: 665px){
+    .hamburger {
+        margin-left: 45%;
+       }
+}
+@media only screen and (max-width: 542px){
+    .hamburger {
+        margin-left: 35%;
+       }
+}
+@media only screen and (max-width: 460px){
+    .hamburger {
+        margin-left: 25%;
+       }
+}
+@media only screen and (max-width: 400px){
+    .hamburger {
+        margin-left: 15%;
+       }
+       .dropup__btn p{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 354px){
+    .hamburger {
+        margin-left: 5%;
+    }
+    .slide__img--mobile{
+     display: block;
+     width: 100vw;
+     height: 300px;
+    }
+    .slide__img--desktop{
+        display: none;
+    }
+    .dropup__btn p{
+        font-size: 17px;
+    }
+
+}
